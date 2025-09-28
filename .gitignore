@@ -1,0 +1,83 @@
+# Visual Studio / .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+**/bin/
+**/obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+[Ll]ogs/
+artifacts/
+publish/
+
+# Test / coverage
+TestResult*/
+[TestR]esults*/
+coverage/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Symbols
+*.pdb
+*.dbg
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code local history
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# User secrets / local config
+secrets.json
+appsettings.*.local.json
+
+# OpenSilver / Blazor specific
+OpenSilver.ResourcesCopier.json
+# Generated code/output (adjust if you intentionally track something below)
+Generated/
+
+# Web / Wasm auxiliary
+wwwroot/dist/
+wwwroot/build/
+*.br
+*.gz
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Temporary files
+*.tmp
+*~
+
+# Others
+*.vsix
+*.opendb
+*.VC.db
+*.rsuser
+
+# Keep .vscode (launch/tasks) and any required project config tracked
+!.vscode/
+
+# End of file

@@ -1,0 +1,33 @@
+{
+    // VS Code launch configurations for debugging the Browser project (Chrome)
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Awes_Homepage.Browser (Chrome)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:55592",
+            "webRoot": "${workspaceFolder}/Awes_Homepage.Browser/wwwroot",
+            "sourceMaps": true,
+            "userDataDir": "${workspaceFolder}/.vscode/chrome-debug",
+            "runtimeArgs": [
+                "--disable-extensions",
+                "--remote-debugging-port=9222"
+            ]
+        },
+        {
+            "name": "Attach to Chrome (9222)",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "webRoot": "${workspaceFolder}/Awes_Homepage.Browser/wwwroot"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Run and Launch Chrome",
+            "configurations": ["Launch Awes_Homepage.Browser (Chrome)"],
+            "preLaunchTask": "dotnet-run-browser"
+        }
+    ]
+}

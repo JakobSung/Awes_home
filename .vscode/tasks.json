@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dotnet-run-browser",
+            "type": "shell",
+            "command": "dotnet run",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}/Awes_Homepage.Browser"
+            },
+            "isBackground": true,
+            "problemMatcher": []
+        }
+    ]
+}
